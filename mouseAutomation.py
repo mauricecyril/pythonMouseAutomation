@@ -28,6 +28,7 @@ def rightclick():
 def main():
     move(952,179)
     rightclick()
+    #time.sleep(15)
     print("Complete")
 
 if __name__ == "__main__":
