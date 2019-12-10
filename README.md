@@ -2,9 +2,11 @@
 Mouse and Keyboard Screen Automation using built in libraries (ctypes & time) in Python 3 on Windows Machines. 
 
 Keyboard HEX codes
+
 | Keyboard Input | Hex Code	|
 | --- | --- |
 | 'Esc' | 0x01 |
+
 | '1' | 0x02 |
 | '2' | 0x03 |
 | '3' | 0x04 |
