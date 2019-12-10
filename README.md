@@ -4,9 +4,7 @@ Mouse and Keyboard Screen Automation using built in libraries (ctypes & time) in
 Keyboard HEX codes
 
 | Keyboard Input | Hex Code	|
-
 | --- | --- |
-
 | 'Esc' | 0x01 |
 
 |'1'| 0x02 |
