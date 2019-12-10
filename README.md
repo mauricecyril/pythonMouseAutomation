@@ -96,7 +96,7 @@ Keyboard HEX codes
 | '=' | 0x8D |
 | '^' | 0x90 |
 | '@' | 0x91 |
-| ' | '' | 0x92 |
+| ':' | 0x92 |
 | '_' | 0x93 |
 | 'Stop' | 0x95 |
 | 'Enter (Numpad)' | 0x9C |
