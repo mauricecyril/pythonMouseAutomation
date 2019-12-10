@@ -106,7 +106,7 @@ kb = {'Esc' :  0x01,
         'B' :  0x30, 
         'N' :  0x31, 
         'M' :  0x32, 
-        '' :  0x33, 
+        ',' :  0x33, 
         '.' :  0x34, 
         '/' :  0x35, 
         'Shift (Right)' :  0x36, 
@@ -216,6 +216,7 @@ def main():
     keypress('A')
     keypress('"\"')
     keypress('L')
+    keypress(',')
         
     print("Complete")
 
