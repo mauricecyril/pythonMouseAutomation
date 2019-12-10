@@ -119,4 +119,4 @@ Keyboard HEX codes
 |Windows|  0xDC | 
 |Menu|  0xDD | 
 |Power|  0xDE | 
-|Windows|  0xDF}
+|Windows|  0xDF|
