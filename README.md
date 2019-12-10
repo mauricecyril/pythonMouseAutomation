@@ -47,7 +47,7 @@ Keyboard HEX codes
 | '' | 0x28 |
 | '`' | 0x29 |
 | 'Shift (Left)' | 0x2A |
-| '"\"' | 0x2B |
+| 'Backslash' | 0x2B |
 | 'Z' | 0x2C |
 | 'X' | 0x2D |
 | 'C' | 0x2E |
