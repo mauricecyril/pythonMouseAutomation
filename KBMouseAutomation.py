@@ -112,7 +112,7 @@ kb = {'Esc' :  0x01,
         'Shift (Right)' :  0x36, 
         '* (Numpad)' :  0x37, 
         'Alt (Left)' :  0x38, 
-        'Space' :  0x39, 
+        ' ' :  0x39, 
         'Caps Lock' :  0x3A, 
         'F1' :  0x3B, 
         'F2' :  0x3C, 
@@ -181,6 +181,15 @@ def keypress(key):
     #time.sleep(.05)
     ReleaseKey(int(kb.get(str(key))))
 
+# Dictionary and Text Functions
+def split(word):
+    return list(word)
+
+def typetext(referencelist):
+    for k in referencelist:
+        if k in kb:
+            keypress(k)
+
 
 # Mouse Move and Click Functions
 def move(x,y):
@@ -202,23 +211,35 @@ def rightclick():
     '''Single Right Click'''
     ctypes.windll.user32.mouse_event(8, 0, 0, 0, 0) # Right Down MOUSE_RIGHTDOWN = 0x0008
     ctypes.windll.user32.mouse_event(16, 0, 0, 0, 0) # Right Up MOUSE_RIGHTUP = 0x0010
+
+
+def typestring(stringinput):
+    stringlist = split(stringinput.upper()) # Put string into a list make all letters uppercase
+    print("Typing out: " + stringinput)
+    typetext(stringlist) # Send the string list to the type text function
     
+
 def main():
     time.sleep(2)
    
-        
-    move(98,120) # Move cursor to location
-    singleclick()
-    time.sleep(1)
+    #move(98,120) # Move cursor to location
+    #singleclick()
+    #time.sleep(1)
 
-    # Input 
-    keypress('1')        
-    keypress('A')
-    keypress('Backslash')
-    keypress('L')
-    keypress(',')
+    # Input individual keys
+    #keypress('1')        
+    #keypress('A')
+    #keypress('Backslash')
+    #keypress('L')
+    #keypress(',')
         
+
+    # Input a string
+    stringofwords = input("What do you want typed? ")
+    typestring(stringofwords)
+
     print("Complete")
+
 
 if __name__ == "__main__":
     main()
